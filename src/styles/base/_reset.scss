@@ -1,0 +1,40 @@
+@use "../abstracts/colors" as *;
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  min-height: 100vh;
+}
+
+.light {
+  .text {
+    color: $dark-9;
+  }
+  .background {
+    background-color: $light-theme;
+  }
+}
+
+.dark {
+  .text {
+    color: $white;
+  }
+  .background {
+    background-color: #222222;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}

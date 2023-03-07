@@ -1,0 +1,133 @@
+@use "../../styles/abstracts/colors" as *;
+
+.skills {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.textContainer {
+  h1 {
+    font-size: 100px;
+  }
+}
+
+.cardAbout {
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+.skillSet {
+  h3 {
+    margin: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  svg {
+    font-size: 60px;
+    margin: 10px;
+  }
+}
+
+.icon {
+  transition: transform 0.3s ease-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.arrowUp {
+  margin-top: 1.08em;
+  font-size: 60px;
+}
+
+.arrowDown {
+  font-size: 60px;
+  margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer {
+    h1 {
+      font-size: 60px;
+    }
+  }
+  .arrowDown {
+    svg {
+      margin-top: 1em;
+    }
+  }
+}
+
+.light {
+  .arrowUp {
+    color: $name;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+  .arrowDown {
+    color: $name;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+  .skillSet {
+    h3 {
+      color: $dark-theme;
+      border-bottom: 2px solid rgb(152, 152, 152);
+      border-top: 2px solid rgb(152, 152, 152);
+    }
+  }
+  h1 {
+    color: $name;
+    -webkit-text-stroke: 1.5px black;
+  }
+  .cardAbout {
+    background-color: $card-color-light;
+  }
+}
+
+.dark {
+  .arrowDown {
+    color: $secondary-color;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 10;
+    shape-rendering: auto;
+  }
+  .arrowUp {
+    color: $secondary-color;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 10;
+    shape-rendering: auto;
+  }
+  h1 {
+    color: $secondary-color;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  .skillSet {
+    h3 {
+      color: $white;
+      border-bottom: 2px solid rgb(152, 152, 152);
+      border-top: 2px solid rgb(152, 152, 152);
+    }
+  }
+  .cardAbout {
+    background-color: $card-color-dark;
+    p {
+      color: $dark-5;
+    }
+  }
+}

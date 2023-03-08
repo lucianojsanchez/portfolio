@@ -103,19 +103,19 @@
 .dark {
   .arrowDown {
     color: $secondary-color;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(0, 0, 0);
     stroke-width: 10;
     shape-rendering: auto;
   }
   .arrowUp {
     color: $secondary-color;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(0, 0, 0);
     stroke-width: 10;
     shape-rendering: auto;
   }
   h1 {
     color: $secondary-color;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
   .skillSet {
     h3 {

@@ -4,13 +4,16 @@ import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./AboutMe.module.scss";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className="background flex">
       <div className={`${styles.aboutMe} ${styles[theme]}`}>
-        <FontAwesomeIcon icon={faArrowUp} />
+        <Link to="/">
+          <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        </Link>
         <div className={styles.textContainer}>
           <h1>About Me</h1>
         </div>
@@ -37,7 +40,9 @@ const AboutMe = () => {
         </div>
         <div className={styles.arrowDown}>
           {" "}
-          <FontAwesomeIcon icon={faArrowDown} />
+          <Link to="/skills">
+            <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+          </Link>
         </div>
       </div>
     </div>

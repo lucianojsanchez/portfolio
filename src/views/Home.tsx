@@ -5,7 +5,7 @@ import styles from "./Home.module.scss";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
@@ -23,7 +23,9 @@ const Home = () => {
         </div>
         <div className={styles.arrow}>
           {" "}
-          <FontAwesomeIcon icon={faArrowDown} />
+          <Link to="/about">
+            <FontAwesomeIcon icon={faArrowDown} />
+          </Link>
         </div>
       </div>
     </div>

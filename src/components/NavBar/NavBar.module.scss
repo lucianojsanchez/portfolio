@@ -45,6 +45,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .switchClass {
+    margin-left: 15px;
+  }
   .nav {
     justify-content: space-between;
     padding-right: 1rem;

@@ -6,6 +6,7 @@ import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Projects.module.scss";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { SiBentley, SiGithub } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -14,8 +15,9 @@ const ProjectDetail = () => {
   return (
     <div className="background flex">
       <div className={`${styles.project} ${styles[theme]}`}>
-        <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
-
+        <Link to="/projects">
+          <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        </Link>
         <div className={styles.textContainer}>
           <h1>{project.name}</h1>
         </div>

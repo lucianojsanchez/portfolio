@@ -4,16 +4,21 @@ import styles from "./Contact.module.scss";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import { SiHandshake } from "react-icons/si";
 
+import { faHandPeace } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className="background flex">
       <div className={`${styles.contact} ${styles[theme]}`}>
-        <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        <Link to="/projects">
+          <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        </Link>
         <div className={styles.textContainer}>
           <h1>Contact</h1>
-          <p>Hooked? Contact me through these lines</p>
+          <h2>Hooked? Contact me through these lines</h2>
         </div>
         <div className={styles.cardContact}>
           <div className={styles.contactCard}>
@@ -47,7 +52,15 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+        <div>
+          <h3 style={{ paddingTop: "1em" }}>
+            Thanks for your time!, I hope we can talk soon...
+          </h3>
+          <SiHandshake className={styles.handShake} />
+        </div>
+        <Link to="/">
+          <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+        </Link>
       </div>
     </div>
   );

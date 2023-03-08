@@ -9,10 +9,6 @@
   margin: 1em;
   max-width: 100%;
   overflow-x: hidden;
-  svg {
-    font-size: 60px;
-    margin-top: 1em;
-  }
 }
 
 .textContainer {
@@ -25,8 +21,10 @@
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
   padding: 1rem;
+
   width: 80%;
   margin: auto;
+  margin-bottom: 12.7em;
   p {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -34,15 +32,11 @@
 }
 
 .arrowUp {
-  svg {
-    margin-top: 1rem;
-  }
+  font-size: 60px;
 }
 
 .arrowDown {
-  svg {
-    margin-top: 11rem;
-  }
+  font-size: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,13 +71,13 @@
 .dark {
   svg {
     color: $secondary-color;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(0, 0, 0);
     stroke-width: 12;
     shape-rendering: auto;
   }
   h1 {
     color: $secondary-color;
-    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
   }
   .cardAbout {
     background-color: $card-color-dark;

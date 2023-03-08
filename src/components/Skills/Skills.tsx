@@ -32,13 +32,16 @@ import {
   SiJavascript,
   SiTypescript,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className="background flex">
       <div className={`${styles.skills} ${styles[theme]}`}>
-        <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        <Link to="/about">
+          <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
+        </Link>
         <div className={styles.textContainer}>
           <h1>Skills</h1>
         </div>
@@ -175,7 +178,9 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+        <Link to="/projects">
+          <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+        </Link>
       </div>
     </div>
   );

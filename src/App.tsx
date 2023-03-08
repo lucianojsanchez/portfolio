@@ -9,6 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import AboutMe from "./components/AboutMe/AboutMe";
+import ProjectDetail from "./components/Projects/ProjectDetail/ProjectDetail";
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

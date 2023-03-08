@@ -1,0 +1,223 @@
+@use "../../styles/abstracts/colors" as *;
+
+.contact {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.textContainer {
+  h1 {
+    font-size: 60px;
+  }
+}
+.cardContact {
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: fit-content;
+  margin: auto;
+  max-width: 100%;
+}
+
+.contactCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #cbd5e0;
+  border-radius: 1rem;
+  padding: 2rem;
+  button {
+    width: 500px;
+    background-color: #a0aec0;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: transform 150ms ease-in-out, background-color 150ms ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+      transform: translateY(-2px);
+      background-color: #e8e8e8;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    svg {
+      margin-left: 10px;
+      font-size: 60px;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.arrowUp {
+  margin-top: 1.08em;
+  font-size: 60px;
+}
+
+.arrowDown {
+  font-size: 60px;
+  margin-top: 4em;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactCard {
+    button {
+      width: 400px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardContact {
+    width: 90%;
+    display: block;
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+  }
+  .contactCard {
+    display: flex;
+    /* width: 400px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    p {
+      font-size: 15px;
+    }
+    button {
+      max-width: 100%;
+    }
+  }
+  .textContainer {
+    h1 {
+      font-size: 60px;
+    }
+  }
+  .arrowDown {
+    svg {
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cardContact {
+    width: 90%;
+    display: block;
+    p {
+      font-size: 12px;
+    }
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-decoration: none;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      max-width: 90%;
+    }
+    button {
+      margin-top: 2em;
+    }
+  }
+}
+
+.light {
+  .arrowUp {
+    color: $name;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+  .arrowDown {
+    color: $name;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+  h1 {
+    color: $name;
+    -webkit-text-stroke: 1.5px black;
+  }
+  .cardContact {
+    background-color: #f3f3fa;
+    p {
+      color: $dark-theme;
+    }
+  }
+  .contactCard {
+    button {
+      a {
+        svg {
+          color: $name;
+          stroke: black;
+          stroke-width: 12;
+          shape-rendering: auto;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  p {
+    color: white;
+  }
+  .arrowUp {
+    color: $secondary-color;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+  .arrowDown {
+    color: $secondary-color;
+    stroke: black;
+    stroke-width: 12;
+    shape-rendering: auto;
+  }
+}
+h1 {
+  color: $secondary-color;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+.cardContact {
+  background-color: $card-color-dark;
+  p {
+    color: $dark-theme;
+  }
+  .contactCard {
+    svg {
+      color: $secondary-color;
+      stroke: black;
+      stroke-width: 12;
+      shape-rendering: auto;
+    }
+  }
+}

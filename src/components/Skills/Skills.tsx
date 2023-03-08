@@ -9,7 +9,6 @@ import {
   SiHtml5,
   SiCss3,
   SiCssmodules,
-  SiStyledcomponents,
   SiBootstrap,
   SiBulma,
   SiNodedotjs,
@@ -87,11 +86,6 @@ const Skills = () => {
               title="FontAwesome"
               className={styles.icon}
             />
-            <SiStyledcomponents
-              style={{ color: "#DB7093" }}
-              title="Styled Components"
-              className={styles.icon}
-            />
             <SiJavascript
               style={{ color: "#F7DF1E" }}
               title="JavaScript"
@@ -130,13 +124,9 @@ const Skills = () => {
               title="MySQL"
               className={styles.icon}
             />
-            <SiPostman
-              style={{ color: "#FF6C37" }}
-              title="Postman"
-              className={styles.icon}
-            />
+
             <SiPostgresql
-              style={{ color: "##4169E1" }}
+              style={{ color: "#4169E1" }}
               title="PostgreSQL"
               className={styles.icon}
             />
@@ -175,6 +165,11 @@ const Skills = () => {
               <SiAdobephotoshop
                 style={{ color: "#31A8FF" }}
                 title="Adobe Photoshop"
+                className={styles.icon}
+              />
+              <SiPostman
+                style={{ color: "#FF6C37" }}
+                title="Postman"
                 className={styles.icon}
               />
             </div>

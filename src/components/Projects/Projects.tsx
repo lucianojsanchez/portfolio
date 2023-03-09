@@ -36,7 +36,7 @@ const Projects = () => {
               );
             })}
           </div>
-          <h3 style={{ paddingTop: "1em" }}>More projects are comming!</h3>
+          <h3 style={{ paddingTop: "1em" }}>More projects are comming!...</h3>
         </div>
         <Link to="/contact">
           <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />

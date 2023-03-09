@@ -20,6 +20,7 @@
 .textContainer {
   align-items: center;
   padding-top: 4rem;
+  max-width: 100%;
   h2 {
     font-weight: bold;
     font-size: 80px;
@@ -27,10 +28,8 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   }
   h1 {
-    font-size: 170px;
-    /* Increase line height for better readability */
+    font-size: 160px;
     line-height: 1.2;
-    /* Add text shadow to create contrast against background */
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   }
 }
@@ -69,7 +68,51 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .textContainer {
+    h1 {
+      font-size: 150px;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .textContainer {
+    h1 {
+      font-size: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .textContainer {
+    h1 {
+      font-size: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .textContainer {
+    h1 {
+      font-size: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 843px) and (max-width: 1024px) {
+  .textContainer {
+    h1 {
+      font-size: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 843px) {
+  .textContainer {
+    h1 {
+      font-size: 90px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -83,13 +126,44 @@
   }
   .prompt {
     svg {
-      font-size: 50px;
+      font-size: 40px;
       margin: 0.4em;
     }
   }
   .arrow {
     svg {
       margin: 1em;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .textContainer {
+    h2 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .prompt {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .textContainer {
+    h2 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .prompt {
+    h3 {
+      font-size: 20px;
     }
   }
 }

@@ -18,11 +18,11 @@ const Home = () => {
     >
       <div className={`${styles.home} ${styles[theme]}`}>
         <div className={styles.textContainer}>
-          <h2>Hi!, My name is</h2>
-          <h1>Luciano Sanchez.</h1>
+          <h2>Hi!, My name is:</h2>
+          <h1>Luciano Sanchez</h1>
         </div>
         <div className={styles.prompt}>
-          <h3>I'm a Full Stack Web Developer</h3>
+          <h3>I'm a Full Stack Web Developer.</h3>
           <a href="https://github.com/lucianojsanchez" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>

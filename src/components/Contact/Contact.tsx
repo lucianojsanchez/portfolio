@@ -22,7 +22,7 @@ const Contact = () => {
         </Link>
         <div className={styles.textContainer}>
           <h1>Contact</h1>
-          <h2>Hooked? Contact me through these lines</h2>
+          <h2>¿Hooked?, Contact me through these lines!.</h2>
         </div>
         <div className={styles.cardContact}>
           <div className={styles.contactCard}>
@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div>
           <h3 style={{ paddingTop: "1em" }}>
-            Thanks for your time!, I hope we can talk soon...
+            ¡Thanks for your time!, I hope we can talk soon...
           </h3>
           <SiHandshake className={styles.handShake} />
         </div>

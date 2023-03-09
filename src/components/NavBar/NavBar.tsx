@@ -10,13 +10,15 @@ import { FaSun, FaMoon } from "react-icons/fa";
 const NavBar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [showMenu, setShowMenu] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (Link: string) => {
     setShowMenu(false);
+    setActiveLink(Link);
   };
 
   return (
@@ -26,27 +28,47 @@ const NavBar = () => {
       </button>
       <ul className={`${styles.menu} ${showMenu ? styles.show : ""}`}>
         <li>
-          <Link onClick={handleLinkClick} to="/">
+          <Link
+            onClick={() => handleLinkClick("Home")}
+            to="/"
+            className={activeLink === "Home" ? styles.active : ""}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} to="/about">
+          <Link
+            onClick={() => handleLinkClick("About Me")}
+            to="/about"
+            className={activeLink === "About Me" ? styles.active : ""}
+          >
             About Me
           </Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} to="/skills">
+          <Link
+            onClick={() => handleLinkClick("Skills")}
+            to="/skills"
+            className={activeLink === "Skills" ? styles.active : ""}
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} to="/projects">
+          <Link
+            onClick={() => handleLinkClick("Projects")}
+            to="/projects"
+            className={activeLink === "Projects" ? styles.active : ""}
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link onClick={handleLinkClick} to="/contact">
+          <Link
+            onClick={() => handleLinkClick("Contact")}
+            to="/contact"
+            className={activeLink === "Contact" ? styles.active : ""}
+          >
             Contact
           </Link>
         </li>

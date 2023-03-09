@@ -27,6 +27,16 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 17px;
+        padding: 13px;
+        border: none;
+        &:hover {
+          padding: 13px;
+          border-radius: 5px;
+        }
+        &:active,
+        &:focus {
+          border-radius: 5px;
+        }
       }
     }
   }
@@ -66,10 +76,25 @@
       padding: 1rem;
       text-decoration: none;
       box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
-
       li {
         margin: 0.5rem 0;
         text-decoration: none;
+        a {
+          &:hover {
+            border-radius: 5px;
+          }
+          &:active,
+          &:focus {
+            border-radius: 5px;
+            background-color: $primary-color;
+            color: $dark-5;
+          }
+          &.active {
+            border-radius: 5px;
+            background-color: $primary-color;
+            color: $dark-5;
+          }
+        }
       }
 
       li:first-child {
@@ -82,7 +107,6 @@
         text-decoration: none;
       }
     }
-
     ul.show {
       display: flex;
     }
@@ -99,6 +123,19 @@
   }
   a {
     color: $dark-5;
+    &:hover {
+      background-color: $light-theme;
+      border-radius: 5px;
+    }
+    &:active,
+    &:focus {
+      border-radius: 5px;
+      background-color: $light-theme;
+    }
+    &.active {
+      border-radius: 5px;
+      background-color: $light-theme;
+    }
   }
   .switchClass {
     background-color: rgb(169, 169, 169);
@@ -109,12 +146,41 @@
   background-color: $secondary-color;
   box-shadow: 0 0 10px rgba(114, 114, 114, 0.5);
   a {
-    color: $white;
+    color: white;
+    &:hover {
+      background-color: $dark-5;
+      border-radius: 5px;
+    }
+    &:active,
+    &:focus {
+      border-radius: 5px;
+      background-color: $dark-5;
+    }
+    &.active {
+      border-radius: 5px;
+      background-color: $dark-5;
+    }
   }
   @media only screen and (max-width: 768px) {
     ul {
       background-color: $dark-5;
       box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+    a {
+      color: white;
+      &:hover {
+        background-color: $dark-5;
+        border-radius: 5px;
+      }
+      &:active,
+      &:focus {
+        border-radius: 5px;
+        background-color: $dark-5;
+      }
+      &.active {
+        border-radius: 5px;
+        background-color: $dark-5;
+      }
     }
   }
   .switchClass {

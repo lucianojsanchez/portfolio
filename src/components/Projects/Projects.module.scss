@@ -60,7 +60,7 @@
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
   padding: 3em;
-  width: 80%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -98,19 +98,7 @@
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1300px) {
-  .projectList {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .projectList {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 320px) {
   .projectList {
     width: 100%;
   }
@@ -118,6 +106,7 @@
   .projectItem {
     width: 300px;
     height: 300px;
+    align-content: center;
   }
 }
 

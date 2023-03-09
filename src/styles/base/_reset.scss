@@ -5,6 +5,7 @@
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -12,6 +13,7 @@ body {
 
 .background {
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .light {
@@ -35,6 +37,7 @@ body {
 .flex {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   height: 100%;
   align-items: center;
 }

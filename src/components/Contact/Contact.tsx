@@ -26,34 +26,35 @@ const Contact = () => {
         </div>
         <div className={styles.cardContact}>
           <div className={styles.contactCard}>
-            <button>
-              <a
-                href="https://github.com/lucianojsanchez"
-                target="_blank"
-                className=""
-              >
+            <a
+              href="https://github.com/lucianojsanchez"
+              target="_blank"
+              className=""
+            >
+              <button>
                 <p>/lucianojsanchez</p>
                 <FaGithub />
-              </a>
-            </button>
-            <button className="">
-              <a href="https://github.com/lucianojsanchez" target="_blank">
+              </button>
+            </a>
+            <a href="https://github.com/lucianojsanchez" target="_blank">
+              <button style={{ cursor: "pointer" }}>
                 <p>/lucianojsanchez</p>
                 <FaLinkedin />
-              </a>
-            </button>
-            <button>
-              <a href="https://wa.link/m8rzyf" target="_blank">
+              </button>
+            </a>
+
+            <a href="https://wa.link/m8rzyf" target="_blank">
+              <button>
                 <p>(+54)0381 624-1914</p>
                 <FaWhatsapp />
-              </a>
-            </button>
-            <button>
-              <a href="mailto:lucianojoelsanchez@gmail.com" target="_blank">
+              </button>
+            </a>
+            <a href="mailto:lucianojoelsanchez@gmail.com" target="_blank">
+              <button>
                 <p>lucianojoelsanchez@gmail.com</p>
                 <FaEnvelope />
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         <div>

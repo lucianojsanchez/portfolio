@@ -24,7 +24,7 @@ const AboutMe = () => {
           <h1>About Me</h1>
         </div>
         <div className={styles.cardAbout}>
-          <p className="text">
+          <p>
             I've been fascinated with technology since I was a kid, and now I'm
             pursuing web development as a career. Over the past year, I've been
             expanding my knowledge in various programming languages and
@@ -44,12 +44,9 @@ const AboutMe = () => {
             opportunities you may have.
           </p>
         </div>
-        <div className={styles.arrowDown}>
-          {" "}
-          <Link to="/skills">
-            <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
-          </Link>
-        </div>
+        <Link to="/skills">
+          <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
+        </Link>
       </div>
     </motion.div>
   );

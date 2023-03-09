@@ -23,9 +23,19 @@ const Home = () => {
         </div>
         <div className={styles.prompt}>
           <h3 className="text">I'm a Full Stack Web Developer</h3>
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faEnvelope} />
+          <a href="https://github.com/lucianojsanchez" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucianojsanchez/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+
+          <a href="mailto:lucianojoelsanchez@gmail.com" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
         <div className={styles.arrow}>
           {" "}

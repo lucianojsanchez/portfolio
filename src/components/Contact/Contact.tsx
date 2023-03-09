@@ -6,12 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { SiHandshake } from "react-icons/si";
-
-import { faHandPeace } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.contact} ${styles[theme]}`}>
         <Link to="/projects">
           <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
@@ -62,7 +66,7 @@ const Contact = () => {
           <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

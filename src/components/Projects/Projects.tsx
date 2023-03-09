@@ -4,15 +4,19 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 import ProjectItem from "./ProjectItem";
 import { ProjectList } from "../../helpers/ProjectList";
-import looking from "../../assets/looking.png";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.project} ${styles[theme]}`}>
         <Link to="/skills">
           <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
@@ -32,12 +36,13 @@ const Projects = () => {
               );
             })}
           </div>
+          <h3 style={{ paddingTop: "1em" }}>More projects are comming!</h3>
         </div>
         <Link to="/contact">
           <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

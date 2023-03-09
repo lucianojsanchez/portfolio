@@ -7,13 +7,19 @@ import styles from "./Projects.module.scss";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { SiBentley, SiGithub } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = ProjectList[Number(id)];
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.project} ${styles[theme]}`}>
         <Link to="/projects">
           <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
@@ -43,7 +49,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

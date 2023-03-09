@@ -1,15 +1,21 @@
 import React, { useContext } from "react";
-
 import { ThemeContext } from "../context/ThemeContext";
 import styles from "./Home.module.scss";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.home} ${styles[theme]}`}>
         <div className={styles.textContainer}>
           <h2 className="text">Hi!, My name is</h2>
@@ -28,7 +34,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

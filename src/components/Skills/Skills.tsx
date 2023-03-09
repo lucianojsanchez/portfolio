@@ -33,11 +33,17 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.skills} ${styles[theme]}`}>
         <Link to="/about">
           <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
@@ -182,7 +188,7 @@ const Skills = () => {
           <FontAwesomeIcon icon={faArrowDown} className={styles.arrowDown} />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

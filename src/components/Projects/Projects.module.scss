@@ -170,9 +170,11 @@
     color: $secondary-color;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
-  h2 {
+  h2,
+  h3 {
     color: $white;
   }
+
   .cardAbout {
     background-color: $card-color-dark;
     p {

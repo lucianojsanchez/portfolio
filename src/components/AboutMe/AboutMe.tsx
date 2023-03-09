@@ -5,11 +5,17 @@ import styles from "./AboutMe.module.scss";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="background flex">
+    <motion.div
+      className="background flex"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={`${styles.aboutMe} ${styles[theme]}`}>
         <Link to="/">
           <FontAwesomeIcon icon={faArrowUp} className={styles.arrowUp} />
@@ -45,7 +51,7 @@ const AboutMe = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

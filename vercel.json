@@ -17,8 +17,8 @@
       "dest": "/index.html"
     },
     {
-      "src": "/project/:id(\\d+)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     },
     {
       "src": "/contact",

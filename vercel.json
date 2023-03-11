@@ -1,10 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/(about|skills|projects|project/:id|contact)",
-      "dest": "/index.html"
-    }
-  ],
   "rewrites": [
     {
       "source": "/(about|skills|projects|project/:id|contact)",

@@ -17,7 +17,7 @@
       "dest": "/index.html"
     },
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "destination": "/index.html"
     },
     {

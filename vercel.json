@@ -17,7 +17,7 @@
       "dest": "/index.html"
     },
     {
-      "src": "/project/:id",
+      "src": "/project/0",
       "dest": "/index.html"
     },
     {

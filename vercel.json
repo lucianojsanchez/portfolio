@@ -3,6 +3,10 @@
     {
       "source": "/(about|skills|projects|project/:id|contact)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

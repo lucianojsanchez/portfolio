@@ -29,7 +29,9 @@ const ProjectDetail = () => {
         </div>
         <div className={styles.cardAbout}>
           <div className={styles.project}>
-            <img src={project.image} alt={project.name} />
+            <a href="https://front-looking.vercel.app/">
+              <img src={project.image} alt={project.name} />
+            </a>
             <p>
               <div className={styles.skills}>
                 {project.skills.map((skill) => (

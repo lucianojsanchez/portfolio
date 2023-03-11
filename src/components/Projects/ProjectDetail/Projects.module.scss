@@ -13,10 +13,17 @@
     color: #3e497a;
     font-size: 35px;
   }
-  img {
-    width: 700px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+  a {
+    img {
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in;
+      border-radius: 10px;
+      max-width: 700px;
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
   }
 }
 
@@ -47,6 +54,10 @@
 .arrowUp {
   padding-top: 1.3em;
   font-size: 60px;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .textContainer {
@@ -64,6 +75,10 @@
   margin: 0.5rem;
   font-size: 50px;
   color: black;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .cardAbout {
@@ -122,7 +137,6 @@
 @media screen and (max-width: 1024px) {
   .cardAbout {
     width: 700px;
-    height: 550px;
   }
   .skills {
     display: flex;
@@ -139,7 +153,6 @@
 @media screen and (max-width: 768px) {
   .cardAbout {
     width: 500px;
-    height: 450px;
   }
   .arrowUp {
     margin-right: 1px;
@@ -153,10 +166,11 @@
   }
   .project {
     flex-direction: column;
-  }
-  .project img {
-    width: 100%;
-    margin-bottom: 20px;
+    img {
+      margin: 1em;
+      width: 300px;
+      margin-bottom: 20px;
+    }
   }
   .textContainer {
     h1 {
@@ -181,10 +195,18 @@
 
 @media screen and (max-width: 320px) {
   .cardAbout {
-    width: 200px;
-    height: 410px;
+    width: 60%;
+    height: 10%;
   }
-  .skill span {
-    font-size: 10px;
+  .skill {
+    span {
+      font-size: 10px;
+    }
+  }
+  .project {
+    img {
+      margin: 1em;
+      width: 250px;
+    }
   }
 }

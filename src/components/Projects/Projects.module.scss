@@ -24,6 +24,10 @@
 .arrowUp {
   margin-top: 1.08em;
   font-size: 60px;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .textContainer {
@@ -34,6 +38,10 @@
 .arrowDown {
   font-size: 60px;
   margin: 1em;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .projects .projectTitle {
@@ -63,8 +71,6 @@
   max-width: 80%;
   margin: auto;
 }
-
-/* MENU ITEM STYLING */
 
 .projectItem {
   border-radius: 15px;

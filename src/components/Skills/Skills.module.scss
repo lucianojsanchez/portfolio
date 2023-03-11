@@ -9,6 +9,7 @@
   margin: 1em;
   max-width: 100%;
   overflow-x: hidden;
+  width: 90%;
 }
 
 .textContainer {
@@ -21,24 +22,24 @@
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
   padding: 1rem;
-  width: 80%;
+
+  max-width: 1000px;
   margin: auto;
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+  h3 {
+    margin: 1em;
+    padding: 0.5em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
   }
 }
 
 .skillSet {
-  h3 {
-    margin: 2em;
-    font-weight: bold;
-    text-align: center;
-  }
-  svg {
-    font-size: 60px;
-    margin: 10px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .icon {
@@ -48,17 +49,62 @@
   }
 }
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.skill {
+  svg {
+    font-size: 60px;
+    margin: 10px;
+  }
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
 .arrowUp {
   margin-top: 1.08em;
   font-size: 60px;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 .arrowDown {
   font-size: 60px;
   margin: 1em;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .skillSet {
+    width: auto;
+  }
+  .skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    svg {
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
   .textContainer {
     h1 {
       font-size: 60px;
@@ -84,19 +130,17 @@
     stroke-width: 12;
     shape-rendering: auto;
   }
-  .skillSet {
-    h3 {
-      color: $dark-theme;
-      border-bottom: 2px solid rgb(152, 152, 152);
-      border-top: 2px solid rgb(152, 152, 152);
-    }
-  }
   h1 {
     color: $name;
     -webkit-text-stroke: 1.5px black;
   }
   .cardAbout {
     background-color: $card-color-light;
+    h3 {
+      color: $dark-theme;
+      border-bottom: 2px solid rgb(152, 152, 152);
+      border-top: 2px solid rgb(152, 152, 152);
+    }
   }
 }
 
@@ -117,17 +161,18 @@
     color: $secondary-color;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
-  .skillSet {
+
+  .cardAbout {
+    background-color: $card-color-dark;
     h3 {
       color: $white;
       border-bottom: 2px solid rgb(152, 152, 152);
       border-top: 2px solid rgb(152, 152, 152);
     }
   }
-  .cardAbout {
-    background-color: $card-color-dark;
+  .skill {
     p {
-      color: $dark-5;
+      color: $white;
     }
   }
 }

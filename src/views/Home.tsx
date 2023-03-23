@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-import styles from "./Home.module.scss";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+import styles from './Home.module.scss';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -18,7 +18,7 @@ const Home = () => {
     >
       <div className={`${styles.home} ${styles[theme]}`}>
         <div className={styles.textContainer}>
-          <h2>Hi!, My name is:</h2>
+          <h2>Hi!, My name is</h2>
           <h1>Luciano Sanchez</h1>
         </div>
         <div className={styles.prompt}>

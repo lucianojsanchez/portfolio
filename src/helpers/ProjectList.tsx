@@ -1,4 +1,4 @@
-import { FaJs, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaJs, FaHtml5, FaCss3 } from 'react-icons/fa';
 import {
   SiReact,
   SiHtml5,
@@ -26,253 +26,254 @@ import {
   SiJquery,
   SiJavascript,
   SiTypescript,
-} from "react-icons/si";
-import looking from "../assets/looking.png";
-import rawg from "../assets/rawg.png";
-import styles from "../components/Skills/Skills.module.scss";
+} from 'react-icons/si';
+import looking from '../assets/looking.png';
+import rawg from '../assets/rawg.png';
+import styles from '../components/Skills/Skills.module.scss';
 
 export const ProjectList = [
   {
-    name: "LookingPlace (Booking)",
+    name: 'LookingPlace (Booking)',
     image: looking,
     skills: [
       {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: (
           <SiJavascript
-            style={{ color: "#F7DF1E" }}
+            style={{ color: '#F7DF1E' }}
             title="JavaScript"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "CSS",
+        name: 'CSS',
         icon: (
           <SiCss3
-            style={{ color: "#1572B6" }}
+            style={{ color: '#1572B6' }}
             title="Css3"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "HTML",
+        name: 'HTML',
         icon: (
           <SiHtml5
-            style={{ color: "#E34F26" }}
+            style={{ color: '#E34F26' }}
             title="HTML5"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Bulma",
+        name: 'Bulma',
         icon: (
           <SiBulma
-            style={{ color: "#00D1B2" }}
+            style={{ color: '#00D1B2' }}
             title="Bulma"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Redux Toolkit",
+        name: 'Redux Toolkit',
         icon: (
           <SiRedux
-            style={{ color: "#764ABC" }}
+            style={{ color: '#764ABC' }}
             title="Redux"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "React",
+        name: 'React',
         icon: (
           <SiReact
-            style={{ color: "#61DAFB" }}
+            style={{ color: '#61DAFB' }}
             title="React.Js"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "React Router",
+        name: 'React Router',
         icon: (
           <SiReactrouter
-            style={{ color: "#CA4245" }}
+            style={{ color: '#CA4245' }}
             title="React Router"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Node.Js",
+        name: 'Node.Js',
         icon: (
           <SiNodedotjs
-            style={{ color: "#339933" }}
+            style={{ color: '#339933' }}
             title="Node.Js"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Sequelize",
+        name: 'Sequelize',
         icon: (
           <SiSequelize
-            style={{ color: "#52B0E7" }}
+            style={{ color: '#52B0E7' }}
             title="Sequelize"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Express",
+        name: 'Express',
         icon: (
           <SiExpress
-            style={{ color: "#000000" }}
+            style={{ color: '#000000' }}
             title="Express"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Firebase",
+        name: 'Firebase',
         icon: (
           <SiFirebase
-            style={{ color: "#FFCA28" }}
+            style={{ color: '#FFCA28' }}
             title="Firebase"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Vite",
+        name: 'Vite',
         icon: (
           <SiVite
-            style={{ color: "#646CFF" }}
+            style={{ color: '#646CFF' }}
             title="Vite"
             className={styles.icon}
           />
         ),
       },
     ],
-    githubLink: "https://github.com/felduque/lookingplace",
+    githubLink: 'https://github.com/felduque/lookingplace',
   },
   {
-    name: "Videogames Web (RAWG API)",
+    name: 'Videogames Web (RAWG API)',
     image: rawg,
     skills: [
       {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: (
           <SiJavascript
-            style={{ color: "#F7DF1E" }}
+            style={{ color: '#F7DF1E' }}
             title="JavaScript"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "CSS Modules",
+        name: 'CSS Modules',
         icon: (
           <SiCssmodules
-            style={{ color: "#000000" }}
+            style={{ color: '#000000' }}
             title="Css Modules"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "CSS",
+        name: 'CSS',
         icon: (
           <SiCss3
-            style={{ color: "#1572B6" }}
+            style={{ color: '#1572B6' }}
             title="Css3"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "HTML",
+        name: 'HTML',
         icon: (
           <SiHtml5
-            style={{ color: "#E34F26" }}
+            style={{ color: '#E34F26' }}
             title="HTML5"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "PostgreSQL",
+        name: 'PostgreSQL',
         icon: (
           <SiPostgresql
-            style={{ color: "#4169E1" }}
+            style={{ color: '#4169E1' }}
             title="PostgreSQL"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Redux",
+        name: 'Redux',
         icon: (
           <SiRedux
-            style={{ color: "#764ABC" }}
+            style={{ color: '#764ABC' }}
             title="Redux"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "React",
+        name: 'React',
         icon: (
           <SiReact
-            style={{ color: "#61DAFB" }}
+            style={{ color: '#61DAFB' }}
             title="React.Js"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "React Router",
+        name: 'React Router',
         icon: (
           <SiReactrouter
-            style={{ color: "#CA4245" }}
+            style={{ color: '#CA4245' }}
             title="React Router"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Node.Js",
+        name: 'Node.Js',
         icon: (
           <SiNodedotjs
-            style={{ color: "#339933" }}
+            style={{ color: '#339933' }}
             title="Node.Js"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Sequelize",
+        name: 'Sequelize',
         icon: (
           <SiSequelize
-            style={{ color: "#52B0E7" }}
+            style={{ color: '#52B0E7' }}
             title="Sequelize"
             className={styles.icon}
           />
         ),
       },
       {
-        name: "Express",
+        name: 'Express',
         icon: (
           <SiExpress
-            style={{ color: "#000000" }}
+            style={{ color: '#000000' }}
             title="Express"
             className={styles.icon}
           />
         ),
       },
     ],
+    githubLink: 'https://github.com/lucianojsanchez/videogames-demo',
   },
 ];

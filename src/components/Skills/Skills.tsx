@@ -31,6 +31,10 @@ import {
   SiJquery,
   SiJavascript,
   SiTypescript,
+  SiVercel,
+  SiRender,
+  SiTailwindcss,
+  SiFramer,
 } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -132,6 +136,14 @@ const Skills = () => {
               <p>Javascript</p>
             </div>
             <div className={styles.skill}>
+              <SiFramer
+                style={{ color: "#0055FF" }}
+                title="Framer"
+                className={styles.icon}
+              />
+              <p>Framer</p>
+            </div>
+            <div className={styles.skill}>
               <SiSass
                 style={{ color: "#CC6699" }}
                 title="Sass"
@@ -146,6 +158,14 @@ const Skills = () => {
                 className={styles.icon}
               />
               <p>Typescript</p>
+            </div>
+            <div className={styles.skill}>
+              <SiTailwindcss
+                style={{ color: "#06B6D4" }}
+                title="Tailwind CSS"
+                className={styles.icon}
+              />
+              <p>Tailwind CSS</p>
             </div>
             <div className={styles.skill}>
               <SiVite
@@ -241,7 +261,6 @@ const Skills = () => {
               />
               <p>GitHub</p>
             </div>
-
             <div className={styles.skill}>
               <SiPostman
                 style={{ color: "#FF6C37" }}
@@ -257,6 +276,22 @@ const Skills = () => {
                 className={styles.icon}
               />
               <p>Photoshop</p>
+            </div>
+            <div className={styles.skill}>
+              <SiVercel
+                style={{ color: "#000000" }}
+                title="Adobe Photoshop"
+                className={styles.icon}
+              />
+              <p>Vercel</p>
+            </div>
+            <div className={styles.skill}>
+              <SiRender
+                style={{ color: "#46E3B7" }}
+                title="Adobe Photoshop"
+                className={styles.icon}
+              />
+              <p>Render</p>
             </div>
           </div>
         </div>

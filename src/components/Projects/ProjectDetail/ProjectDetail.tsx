@@ -6,6 +6,7 @@ import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Projects.module.scss";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { SiBentley, SiGithub } from "react-icons/si";
+import { FaRegShareSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -29,25 +30,47 @@ const ProjectDetail = () => {
         </div>
         <div className={styles.cardAbout}>
           <div className={styles.project}>
-            <a href="https://front-looking.vercel.app/">
+            <a href={project.deployLink}>
               <img src={project.image} alt={project.name} />
             </a>
-            <p>
+            <div className={styles.repoDeploy}>
+              <h2>Stack & Technologies</h2>
               <div className={styles.skills}>
                 {project.skills.map((skill) => (
                   <div className={styles.skill} key={skill.name}>
                     {skill.icon}
-                    <span>{skill.name}</span>
+                    <p>{skill.name}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+          <div className={styles.repoDeploy}>
+            <h2 className={styles.repo}>Repository and Deploy</h2>
+            <div className={styles.icons}>
+              <button className={styles.btn}>
                 <a href={project.githubLink} className={styles.githubLink}>
                   <SiGithub
                     className={styles.gitHub}
                     style={{ stroke: "white", strokeWidth: "0.5px" }}
                   />
                 </a>
-              </div>
-            </p>
+              </button>
+              {project.deployLink ? (
+                <button className={styles.btn}>
+                  <a href={project.deployLink} className={styles.deployLink}>
+                    <FaRegShareSquare
+                      className={styles.shareSquare}
+                      style={{ stroke: "white", strokeWidth: "0.5px" }}
+                    />
+                  </a>
+                </button>
+              ) : (
+                <button disabled className={styles.disabledButton}>
+                  <FaRegShareSquare className={styles.shareSquareDisable} />
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>

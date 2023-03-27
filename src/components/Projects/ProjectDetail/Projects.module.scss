@@ -27,10 +27,33 @@
   }
 }
 
+.repoDeploy {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
 .skills {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+  margin-top: 3em;
   max-width: 100%;
   p {
     max-width: 100%;
@@ -42,7 +65,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 1rem;
-  span {
+  p {
     margin-top: 1rem;
     font-size: 15px;
   }
@@ -67,11 +90,24 @@
     font-size: 60px;
   }
 }
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+}
+
+.btn {
+  display: flex;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 
 .gitHub {
-  position: absolute;
-  top: 0;
-  right: 0;
   margin: 0.5rem;
   font-size: 50px;
   color: black;
@@ -81,6 +117,38 @@
   }
 }
 
+.shareSquare {
+  margin: 0.5rem;
+  font-size: 40px;
+  color: black;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.disabledButton {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: not-allowed;
+  outline: inherit;
+  .shareSquareDisable {
+    margin: 0.5rem;
+    font-size: 40px;
+    color: rgb(175, 175, 175);
+  }
+}
+
+.share {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  color: black;
+}
 .cardAbout {
   position: relative;
   border-radius: 8px;
@@ -108,10 +176,18 @@
   }
   .cardAbout {
     background-color: $card-color-light;
+    h2 {
+      color: $name;
+      -webkit-text-stroke: 1.5px black;
+    }
   }
 }
 
 .dark {
+  .shareSquare {
+    font-size: 40px;
+    color: $white;
+  }
   .gitHub {
     font-size: 40px;
     color: $white;
@@ -122,6 +198,11 @@
     stroke-width: 10;
     shape-rendering: auto;
   }
+  .skill {
+    .span {
+      color: $white;
+    }
+  }
   h1 {
     color: $secondary-color;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
@@ -130,6 +211,10 @@
     background-color: $card-color-dark;
     p {
       color: $white;
+    }
+    h2 {
+      color: $secondary-color;
+      -webkit-text-stroke: 1px rgb(0, 0, 0);
     }
   }
 }
@@ -149,10 +234,23 @@
     margin: 0.5em;
   }
 }
+@media screen and (max-width: 912px) {
+  .project {
+    img {
+      width: 700px;
+      margin-bottom: 20px;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .cardAbout {
     width: 500px;
+  }
+  .repoDeploy {
+    .h2 {
+      font-size: 5px;
+    }
   }
   .arrowUp {
     margin-right: 1px;
@@ -194,13 +292,19 @@
 }
 
 @media screen and (max-width: 320px) {
+  .project {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
   .cardAbout {
     width: 60%;
     height: 10%;
   }
   .skill {
-    span {
-      font-size: 10px;
+    p {
+      font-size: 15px;
     }
   }
   .project {
@@ -208,5 +312,8 @@
       margin: 1em;
       width: 250px;
     }
+  }
+  .repo {
+    font-size: 14px;
   }
 }

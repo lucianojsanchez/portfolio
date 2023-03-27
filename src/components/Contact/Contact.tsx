@@ -1,5 +1,12 @@
 import React, { useContext } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaFilePdf,
+  FaTwitter,
+} from "react-icons/fa";
 import styles from "./Contact.module.scss";
 import { ThemeContext } from "../../context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -42,7 +49,15 @@ const Contact = () => {
                 <FaLinkedin />
               </button>
             </a>
-
+            <a
+              href="https://drive.google.com/drive/folders/156t5f2oufgfcSaA1C-uoa7RoQaUhDVNA?usp=share_link"
+              target="_blank"
+            >
+              <button>
+                <p>Resume [ES - EN - PT]</p>
+                <FaFilePdf />
+              </button>
+            </a>
             <a href="https://wa.link/m8rzyf" target="_blank">
               <button>
                 <p>(+54)0381 624-1914</p>
@@ -53,6 +68,12 @@ const Contact = () => {
               <button>
                 <p>lucianojoelsanchez@gmail.com</p>
                 <FaEnvelope />
+              </button>
+            </a>
+            <a href="https://twitter.com/lusa_dev" target="_blank">
+              <button>
+                <p>@lusa_dev</p>
+                <FaTwitter />
               </button>
             </a>
           </div>

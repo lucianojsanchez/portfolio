@@ -54,7 +54,7 @@ const Contact = () => {
               target="_blank"
             >
               <button>
-                <p>Resume [ES - EN - PT]</p>
+                <p>Resume [ES - EN]</p>
                 <FaFilePdf />
               </button>
             </a>

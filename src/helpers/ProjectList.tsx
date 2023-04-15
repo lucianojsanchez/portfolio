@@ -480,7 +480,6 @@ export const ProjectList = [
       },
     ],
     githubLink: "https://github.com/lucianojsanchez/star-wars-battle-app",
-    deployLink:
-      "https://star-wars-battle-q5qsmnbo6-lucianojsanchez.vercel.app/",
+    deployLink: "https://star-wars-battle-app.vercel.app/",
   },
 ];

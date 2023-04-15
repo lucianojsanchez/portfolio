@@ -483,4 +483,132 @@ export const ProjectList = [
     deployLink:
       "https://star-wars-battle-q5qsmnbo6-lucianojsanchez.vercel.app/",
   },
+  {
+    name: "Pixel Dreams (DALL-E Clone)",
+    image: pixel,
+    skills: [
+      {
+        name: "Typescript",
+        icon: (
+          <SiTypescript
+            style={{ color: "#3178C6" }}
+            title="Typescript"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Tailwind CSS",
+        icon: (
+          <SiTailwindcss
+            style={{ color: "#06B6D4" }}
+            title="Tailwind CSS"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "HTML",
+        icon: (
+          <SiHtml5
+            style={{ color: "#E34F26" }}
+            title="HTML5"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "React",
+        icon: (
+          <SiReact
+            style={{ color: "#61DAFB" }}
+            title="React.Js"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "React Router",
+        icon: (
+          <SiReactrouter
+            style={{ color: "#CA4245" }}
+            title="React Router"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Node.ts",
+        icon: (
+          <SiTsnode
+            style={{ color: "#3178C6" }}
+            title="Node.Ts"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "MongoDB",
+        icon: (
+          <SiMongodb
+            style={{ color: "#47A248" }}
+            title="MongoDB / Mongoose"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Express",
+        icon: (
+          <SiExpress
+            style={{ color: "#000000" }}
+            title="Express"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "OpenAI Module",
+        icon: (
+          <SiOpenai
+            style={{ color: "#412991" }}
+            title="Express"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Vercel",
+        icon: (
+          <SiVercel
+            style={{ color: "#000000" }}
+            title="Vercel"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Render",
+        icon: (
+          <SiRender
+            style={{ color: "#46E3B7" }}
+            title="Render"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Vite",
+        icon: (
+          <SiVite
+            style={{ color: "#646CFF" }}
+            title="Vite"
+            className={styles.icon}
+          />
+        ),
+      },
+    ],
+    githubLink: "https://github.com/lucianojsanchez/pixel-dreams",
+    deployLink: "https://pixel-dreams.vercel.app/",
+  },
 ];

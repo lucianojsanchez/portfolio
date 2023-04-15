@@ -31,11 +31,13 @@ import {
   SiVercel,
   SiRender,
   SiTsnode,
+  SiNextdotjs,
 } from "react-icons/si";
 import looking from "../assets/looking.png";
 import rawg from "../assets/rawg.png";
 import styles from "../components/Skills/Skills.module.scss";
 import pixel from "../assets/pixel.png";
+import stars from "../assets/stars.png";
 
 export const ProjectList = [
   {
@@ -411,5 +413,74 @@ export const ProjectList = [
     ],
     githubLink: "https://github.com/lucianojsanchez/pixel-dreams",
     deployLink: "https://pixel-dreams.vercel.app/",
+  },
+  {
+    name: "Star Wars Battle App",
+    image: stars,
+    skills: [
+      {
+        name: "Typescript",
+        icon: (
+          <SiTypescript
+            style={{ color: "#3178C6" }}
+            title="Typescript"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Tailwind CSS",
+        icon: (
+          <SiTailwindcss
+            style={{ color: "#06B6D4" }}
+            title="Tailwind CSS"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "HTML",
+        icon: (
+          <SiHtml5
+            style={{ color: "#E34F26" }}
+            title="HTML5"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Next.Js",
+        icon: (
+          <SiNextdotjs
+            style={{ color: "#000000" }}
+            title="Next.Js"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "React",
+        icon: (
+          <SiReact
+            style={{ color: "#61DAFB" }}
+            title="React.Js"
+            className={styles.icon}
+          />
+        ),
+      },
+      {
+        name: "Vercel",
+        icon: (
+          <SiVercel
+            style={{ color: "#000000" }}
+            title="Vercel"
+            className={styles.icon}
+          />
+        ),
+      },
+    ],
+    githubLink: "https://github.com/lucianojsanchez/star-wars-battle-app",
+    deployLink:
+      "https://star-wars-battle-q5qsmnbo6-lucianojsanchez.vercel.app/",
   },
 ];
